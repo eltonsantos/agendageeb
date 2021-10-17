@@ -1,0 +1,29 @@
+
+<%= simple_form_for @member, html: {multipart: true} do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.file_field :picture %>
+    <%= f.input :name %>
+    <%= f.input :email %>
+    <%= f.input :birthdate %>
+    <%= f.input :phone %>
+    <%= f.input :cep %>
+    <%= f.input :street %>
+    <%= f.input :number %>
+    <%= f.input :neighborhood %>
+    <%= f.input :country %>
+    <%= f.input :city %>
+    <%= f.input :state %>
+    <%= f.input :complement %>
+    <%= f.input :facebook %>
+    <%= f.input :instagram %>
+    <%= f.input :linkedin %>
+    <%= f.input :bio %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

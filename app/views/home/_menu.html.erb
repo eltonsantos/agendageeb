@@ -1,0 +1,20 @@
+<ul>
+  <li>
+    <%= link_to "Home", root_path %>
+  </li>
+  <% if user_signed_in? %>
+    <li>
+      <%= link_to "Membros", members_path %>
+    </li>
+    <li>
+      Bem vindo, <%= current_user.email %>
+    </li>
+    <li>
+      <%=link_to "Sair", destroy_user_session_path, method: :delete %>
+    </li>
+  <% else %>
+    <li>
+      <%= link_to "Login", new_user_session_path %>
+    </li>
+  <% end %>
+</ul>

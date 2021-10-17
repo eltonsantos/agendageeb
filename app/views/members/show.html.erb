@@ -1,0 +1,91 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Picture:</strong>
+  <% if @member.picture.attached? %>
+    <%= image_tag @member.picture %>
+  <% end %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @member.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @member.email %>
+</p>
+
+<p>
+  <strong>Birthdate:</strong>
+  <%= @member.birthdate %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @member.phone %>
+</p>
+
+<p>
+  <strong>Cep:</strong>
+  <%= @member.cep %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @member.street %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @member.number %>
+</p>
+
+<p>
+  <strong>Neighborhood:</strong>
+  <%= @member.neighborhood %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @member.country %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @member.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @member.state %>
+</p>
+
+<p>
+  <strong>Complement:</strong>
+  <%= @member.complement %>
+</p>
+
+<p>
+  <strong>Facebook:</strong>
+  <%= @member.facebook %>
+</p>
+
+<p>
+  <strong>Instagram:</strong>
+  <%= @member.instagram %>
+</p>
+
+<p>
+  <strong>Linkedin:</strong>
+  <%= @member.linkedin %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @member.bio %>
+</p>
+
+<%= link_to 'Edit', edit_member_path(@member) %> |
+<%= link_to 'Back', members_path %>
