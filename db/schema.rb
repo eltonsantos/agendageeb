@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 2021_10_17_025629) do
   create_table "members", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.datetime "birthdate"
+    t.date "birthdate"
     t.string "phone"
     t.string "cep"
     t.string "street"
@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(version: 2021_10_17_025629) do
     t.string "instagram"
     t.string "linkedin"
     t.text "bio"
+    t.boolean "altacupula"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

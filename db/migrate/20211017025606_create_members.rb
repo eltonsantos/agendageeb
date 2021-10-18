@@ -17,6 +17,8 @@ class CreateMembers < ActiveRecord::Migration[6.1]
       t.string :instagram
       t.string :linkedin
       t.text :bio
+      t.boolean :altacupula
+      
 
       t.timestamps
     end

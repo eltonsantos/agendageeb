@@ -1,2 +1,13 @@
 <h1>AgendaGEEB</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+<% if user_signed_in? %>
+  <% if @birthday_name.exists? %>
+    <% @birthday_name.each do |member| %>
+      Hoje é aniversário do(a) <%= member.name %>! Vamos comemorar!
+    <% end %>
+  <% else %>
+    Não existe aniversariante hoje.
+  <% end %>
+<% else %>
+  Bem vindo a AgendaGEEB!
+<% end %>

@@ -19,7 +19,7 @@
 
 <p>
   <strong>Data de nascimento:</strong>
-  <%= @member.birthdate %>
+  <%= @member.birthdate.strftime("%d/%m/%Y") %>
 </p>
 
 <p>
@@ -85,6 +85,11 @@
 <p>
   <strong>Bio:</strong>
   <%= @member.bio %>
+</p>
+
+<p>
+  <strong>Alta Cúpula?</strong>
+  <%= @member.altacupula %>
 </p>
 
 <%= link_to 'Edit', edit_member_path(@member) %> |

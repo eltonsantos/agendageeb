@@ -3,6 +3,9 @@ class MembersController < ApplicationController
 
   # GET /members or /members.json
   def index
+    # @birthday_name = Member.where("extract(day from birthdate) = ? AND extract(month from birthdate) = ?", Date.today.strftime('%d'), Date.today.strftime('%m'))
+    # @birthday_name = Member.where("strftime('%d%m', birthdate) = ?", Date.today.strftime('%d%m'))
+    # @birthday_name = Member.all.find_all {|u| u.birthday_today? }
     @members = Member.all
   end
 
@@ -64,6 +67,6 @@ class MembersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def member_params
-      params.require(:member).permit(:picture, :name, :email, :birthdate, :phone, :cep, :street, :number, :neighborhood, :country, :city, :state, :complement, :facebook, :instagram, :linkedin, :bio)
+      params.require(:member).permit(:picture, :name, :email, :birthdate, :phone, :cep, :street, :number, :neighborhood, :country, :city, :state, :complement, :facebook, :instagram, :linkedin, :bio, :altacupula)
     end
 end
