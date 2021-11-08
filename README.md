@@ -8,36 +8,37 @@ What's new?
 > About GEEB and Agenda GEEB 
 (explicando o que é e como surgiu o grupo e o projeto de atividades e no final poderia incluir o site da Erika, afinal, foi com ela que tudo começou, merece os créditos) 
 
-> GEEB on Telegram 
+> GEEB on Telegram
 (aqui vai estar o link do canal e do grupo com a explicação de que só abre durante as lives da Erika) 
 
-> Our Team: Equipe Agenda GEEB 
+> Our Team: Equipe Agenda GEEB
 (uma listinha com foto, nome, talvez até "função", e breve descrição de cada membro da equipe) 
 
-> F.A.Q. 
+> F.A.Q.
 (uma listinha com as principais dúvidas e perguntas que nos fazem, sempre escritas do jeito que o pessoal pergunta, e as respectivas respostas) 
 
-> Terms of Use 
+> Terms of Use
 (todas as regrinhas do site, do canal, e do grupo) 
 
-> Read Members Testimonials 
+> Read Members Testimonials
 (aqui poderíamos colocar alguns depoimentos dos membros mais ativos do grupo dizendo o que eles acham do grupo) 
 
-> Members 
+> Members
 (a lista de cadastro de membros)
 
-> GEEBirthdays Calendar 
+> GEEBirthdays Calendar
 (um calendário com o aniversário de cada membro do grupo, do próprio grupo, e do projeto Agenda) 
 
-> Top Suggestions 
+> Top Suggestions
 (as melhores recomendações do mês feitas no grupo - sites, vídeos, músicas, canais, podcasts, etc - de conteúdos e materiais para estudo de inglês) 
 
-> Activities 
+> Activities
 (arquivo de todas as nossas atividades separadas por temporada) 
 - Season 01 
 - Season 02 
 - Season 03 
 - Special Season - Christmas 
+- Season 04 (comming soon)
 
 > Surprises and Tributes 
 (aqui a gente poderia arquivar as homenagens e surpresas, por exemplo, aquela que fizemos pra Erika no dia dos professores) 
