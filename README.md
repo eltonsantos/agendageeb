@@ -1,10 +1,10 @@
 # Agenda GEEB Site 
 
-➡️ Home 
-What's new? 
-(na página inicial - um mural de avisos e recados, por exemplo: "dia tal começa nossa próxima Season"; "dia tal será nosso próximo GEEB Chat"; "tal dia atingimos a meta de tantos membros no grupo"; "gostaríamos de avisar que tivemos um probleminha com tal coisa"; "gostaríamos de avisar que erramos em tal coisa"; etc.) 
-
 ➡️ Menu 
+
+> Home 
+What's new? (na página inicial - um mural de avisos e recados, por exemplo: "dia tal começa nossa próxima Season"; "dia tal será nosso próximo GEEB Chat"; "tal dia atingimos a meta de tantos membros no grupo"; "gostaríamos de avisar que tivemos um probleminha com tal coisa"; "gostaríamos de avisar que erramos em tal coisa"; etc.) 
+
 > About GEEB and Agenda GEEB (Static) 
 (explicando o que é e como surgiu o grupo e o projeto de atividades e no final poderia incluir o site da Erika, afinal, foi com ela que tudo começou, merece os créditos) 
 
@@ -34,11 +34,11 @@ What's new?
 
 > Activities
 (arquivo de todas as nossas atividades separadas por temporada) 
-- Season 01 
-- Season 02 
-- Season 03 
-- Special Season - Christmas 
-- Season 04 (comming soon)
+  - Season 01 
+  - Season 02 
+  - Season 03 
+  - Special Season - Christmas 
+  - Season 04 (comming soon)
 
 > Surprises and Tributes
 (aqui a gente poderia arquivar as homenagens e surpresas, por exemplo, aquela que fizemos pra Erika no dia dos professores) 
