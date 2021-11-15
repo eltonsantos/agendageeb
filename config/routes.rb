@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+  resources :suggestions
+  resources :faqs
+  resources :testimonials
   devise_for :users
   resources :members
 
   get 'about' => "pages#about"
   get 'geeb' => "pages#geeb"
-  get 'faq' => "pages#faq"
   get 'team' => "pages#team"
   get 'terms' => "pages#terms"
 

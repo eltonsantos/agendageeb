@@ -12,13 +12,16 @@
     <%= link_to "Our Team", team_path %>
   </li>
   <li>
-    <%= link_to "F.A.Q", faq_path %>
+    <%= link_to "F.A.Q", faqs_path %>
   </li>
   <li>
     <%= link_to "Terms of Use", terms_path %>
   </li>
   <li>
-    <%= link_to "Read Members Testimonials", root_path %>
+    <%= link_to "Suggestions", suggestions_path %>
+  </li>
+  <li>
+    <%= link_to "Testimonials", testimonials_path %>
   </li>
   <% if user_signed_in? %>
     <li>

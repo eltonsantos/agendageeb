@@ -11,9 +11,6 @@ class PagesController < ApplicationController
   def geeb
   end
 
-  def faq
-  end
-
   def team
   end
 
