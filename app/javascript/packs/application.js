@@ -5,10 +5,15 @@
 
 import * as ActiveStorage from "@rails/activestorage"
 import Rails from "@rails/ujs"
+
+import "jquery"
 import "bootstrap"
+import "../packs/script"
+
 import "channels"
 import Turbolinks from "turbolinks"
 import "../stylesheets/application"
+
 
 import "@fortawesome/fontawesome-free/js/all";
 import "@fortawesome/fontawesome-free/css/all";
