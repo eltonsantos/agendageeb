@@ -18,235 +18,31 @@
 
   <body>
 
-<header class="navigation fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <%= link_to root_path, class: "navbar-brand font-tertiary h3" do %>
-      <%= image_tag ("agendageeb.png") %>
-    <% end %>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <%= render "layouts/header" %>
 
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <%= link_to "Home", root_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "About", about_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Telegram", geeb_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Our Team", team_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "F.A.Q", faqs_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Terms of Use", terms_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Suggestions", suggestions_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Testimonials", testimonials_path, class: "nav-link" %>
-        </li>
-        <% if user_signed_in? %>
-          <li class="nav-item">
-            <%= link_to "Membros", members_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            Bem vindo, <%= current_user.email %>
-          </li>
-          <li class="nav-item">
-            <%=link_to "Sair", destroy_user_session_path, method: :delete, class: "nav-link" %>
-          </li>
-        <% else %>
-          <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-          </li>
-        <% end %>
-      </ul>
-    </div>
-  </nav>
-</header>
+    <%= render "layouts/banner" %>
 
-<!-- hero area -->
-<section class="hero-area bg-agenda" id="parallax">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-11 mx-auto">
-        <h1 class="text-white font-tertiary">Bem vindo ao <br> Agenda GEEB</h1>
-      </div>
-    </div>
-  </div>
-  <div class="layer-bg w-100">
-    <%= image_tag ("illustrations/leaf-bg.png"), class: "img-fluid w-100", alt: "bg-shape" %>
-  </div>
-  <div class="layer" id="l2">
-    <%= image_tag ("illustrations/dots-cyan.png"), alt: "bg-shape" %>
-  </div>
-  <div class="layer" id="l3">
-    <%= image_tag ("illustrations/leaf-orange.png"), alt: "bg-shape" %>
-  </div>
-  <div class="layer" id="l4">
-    <%= image_tag ("illustrations/dots-orange.png"), alt: "bg-shape" %>
-  </div>
-  <div class="layer" id="l5">
-    <%= image_tag ("illustrations/leaf-yellow.png"), alt: "bg-shape" %>
-  </div>
-  <div class="layer" id="l6">
-    <%= image_tag ("illustrations/leaf-cyan.png"), alt: "bg-shape" %>
-  </div>
-  <div class="layer" id="l7">
-    <%= image_tag ("illustrations/dots-group-orange.png"), alt: "bg-shape" %>
-  </div>
-  <div class="layer" id="l8">
-    <%= image_tag ("illustrations/leaf-pink-round.png"), alt: "bg-shape" %>
-  </div>
-  <div class="layer" id="l9">
-    <%= image_tag ("illustrations/leaf-cyan-2.png"), alt: "bg-shape" %>
-  </div>
-  <!-- social icon -->
-  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-    <li class="mb-3"><a class="text-white" href="https://themefisher.com/"><i class="ti-facebook"></i></a></li>
-    <li class="mb-3"><a class="text-white" href="https://themefisher.com/"><i class="ti-instagram"></i></a></li>
-    <li class="mb-3"><a class="text-white" href="https://themefisher.com/"><i class="ti-dribbble"></i></a></li>
-    <li class="mb-3"><a class="text-white" href="https://themefisher.com/"><i class="ti-twitter"></i></a></li>
-  </ul>
-  <!-- /social icon -->
-</section>
-<!-- /hero area -->
+    <!-- about -->
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
 
-<!-- about -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
+            <%= render 'layouts/flash_messages' %>
+            
+            <%= yield %>
 
-        <%= render 'layouts/flash_messages' %>
-        <%= yield %>
-
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /about -->
-
-<!-- blog -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Blogs</h2>
-      </div>
-      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-        <article class="card shadow">
-          <%= image_tag ("blog/post-3.jpg"), class: "rounded card-img-top", alt: "post-thumb" %>
-          <div class="card-body">
-            <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5 Million</a>
-            </h4>
-            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et
-              dolore magna aliqua.</p>
-            <a href="blog-single.html" class="btn btn-xs btn-agenda">Read More</a>
           </div>
-        </article>
+        </div>
       </div>
-      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-        <article class="card shadow">
-          <%= image_tag ("blog/post-4.jpg"), class: "rounded card-img-top", alt: "post-thumb" %>
-          <div class="card-body">
-            <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5 Million</a>
-            </h4>
-            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et
-              dolore magna aliqua.</p>
-            <a href="blog-single.html" class="btn btn-xs btn-agenda">Read More</a>
-          </div>
-        </article>
-      </div>
-      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-        <article class="card shadow">
-          <%= image_tag ("blog/post-2.jpg"), class: "rounded card-img-top", alt: "post-thumb" %>
-          <div class="card-body">
-            <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5 Million</a>
-            </h4>
-            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et
-              dolore magna aliqua.</p>
-            <a href="blog-single.html" class="btn btn-xs btn-agenda">Read More</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /blog -->
+    </section>
+    <!-- /about -->
 
-<!-- contact -->
-<section class="section section-on-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Contact Info</h2>
-      </div>
-      <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down">
-          <h4 class="mb-80">Contact Form</h4>
-          <form action="#" class="row">
-            <div class="col-md-6">
-              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4" required>
-            </div>
-            <div class="col-md-6">
-              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4" required>
-            </div>
-            <div class="col-12">
-              <textarea name="message" id="message" class="form-control px-0 mb-4"
-                placeholder="Type Message Here" required></textarea>
-            </div>
-            <div class="col-lg-6 col-10 mx-auto">
-              <button class="btn btn-agenda w-100">send</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /contact -->
+    <%= render "layouts/blog" %>
 
-<!-- footer -->
-<footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">+880 2544 658 256</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyright &copy;<script>
-        var CurrentYear = new Date().getFullYear()
-        document.write(CurrentYear)
-      </script> Designed &amp; Developed by <a class="text-white-50" href="Themefisher">Themefisher</a></p>
-  </div>
-</footer>
-<!-- /footer -->
+    <%= render "layouts/contact" %>
+
+    <%= render "layouts/footer" %>
 
   </body>
 </html>

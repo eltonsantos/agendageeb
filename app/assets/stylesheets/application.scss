@@ -77,13 +77,13 @@ h6, .h6 {
 
 /* Button style */
 .btn {
-  font-size: 22px;
+  font-size: 22px !important;;
   font-family: "Playfair Display", serif;
   text-transform: capitalize;
-  padding: 16px 44px;
+  padding: 16px 44px !important;
   border-radius: 5px;
-  font-weight: 600;
-  border: 0;
+  font-weight: 600 !important;
+  border: 0 !important;
   position: relative;
   z-index: 1;
   transition: 0.2s ease;
