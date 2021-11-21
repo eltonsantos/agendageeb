@@ -6,7 +6,8 @@ class MembersController < ApplicationController
     # @birthday_name = Member.where("extract(day from birthdate) = ? AND extract(month from birthdate) = ?", Date.today.strftime('%d'), Date.today.strftime('%m'))
     # @birthday_name = Member.where("strftime('%d%m', birthdate) = ?", Date.today.strftime('%d%m'))
     # @birthday_name = Member.all.find_all {|u| u.birthday_today? }
-    @members = Member.all
+    @q = Member.ransack(params[:q])
+    @members = @q.result(distinct: true)
   end
 
   # GET /members/1 or /members/1.json

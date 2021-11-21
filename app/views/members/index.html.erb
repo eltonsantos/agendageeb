@@ -2,6 +2,17 @@
 
 <h1>Membros</h1>
 
+<%= search_form_for @q, builder: SimpleForm::FormBuilder do |f| %>
+  <%= f.input :name_cont, label: false, placeholder: 'Nome', class: 'form-control' %>
+  <%= f.input :email_cont, label: false, placeholder: 'Email', class: 'form-control' %>
+  <%= f.input :city_cont, label: false, placeholder: 'Cidade', class: 'form-control' %>
+  <%= f.input :state_cont, label: false, placeholder: 'Estado', class: 'form-control' %>
+  <%= f.button :button, name: '', class: 'btn-warning btn-align' do %>
+    Buscar
+  <% end %>
+<% end %>
+
+
 <table>
   <thead>
     <tr>
