@@ -17,32 +17,52 @@
   </head>
 
   <body>
+  
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <%= link_to "Home", root_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "About", about_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Telegram", geeb_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Our Team", team_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "F.A.Q", faqs_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Terms of Use", terms_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Suggestions", suggestions_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Testimonials", testimonials_path, class: "nav-link" %>
+      </li>
+      <% if user_signed_in? %>
+        <li class="nav-item">
+          <%= link_to "Membros", members_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          Bem vindo, <%= current_user.email %>
+        </li>
+        <li class="nav-item">
+          <%=link_to "Sair", destroy_user_session_path, method: :delete, class: "nav-link" %>
+        </li>
+      <% else %>
+        <li class="nav-item">
+          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+        </li>
+      <% end %>
+    </ul>
 
-    <%= render "layouts/header" %>
-
-    <%= render "layouts/banner" %>
-
-    <!-- about -->
-    <section class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 mx-auto text-center">
-
-            <%= render 'layouts/flash_messages' %>
-            
-            <%= yield %>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /about -->
-
-    <%= render "layouts/blog" %>
-
-    <%= render "layouts/contact" %>
-
-    <%= render "layouts/footer" %>
+    <%= render 'layouts/flash_messages' %>
+    
+    <%= yield %>
 
   </body>
 </html>
