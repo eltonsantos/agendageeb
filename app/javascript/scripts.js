@@ -83,8 +83,4 @@ $(function () {
       obj.style.top = top - (((mouseY - (parseInt(obj.offsetHeight) / 2 + top)) / containerHeight) * speed) + 'px';
   }
   /* ########################################### /hero parallax ############################################## */
-
-
-
-
 });
