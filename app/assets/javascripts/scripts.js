@@ -1,3 +1,1 @@
-function teste() {
-  alert('oooooi')
-}
+// Códigos específicos em JS ficam aqui
