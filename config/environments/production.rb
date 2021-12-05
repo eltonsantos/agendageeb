@@ -71,6 +71,10 @@ Rails.application.configure do
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
+  
+  config.i18n.enforce_available_locales = false
+  config.i18n.available_locales = ["pt-BR"]
+  config.i18n.default_locale = :'pt-BR'
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify

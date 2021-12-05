@@ -30,6 +30,7 @@ gem 'devise'
 gem 'country_select'
 gem 'cancancan'
 gem 'ransack'
+gem 'rails_admin'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
