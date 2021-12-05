@@ -63,6 +63,9 @@ Rails.application.configure do
 
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
+  config.i18n.enforce_available_locales = false
+  config.i18n.available_locales = ["pt-BR"]
+  config.i18n.default_locale = :'pt-BR'
 
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
