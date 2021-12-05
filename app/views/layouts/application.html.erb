@@ -10,13 +10,9 @@
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag "https://jsuites.net/v4/jsuites.css" %>
 
-    <%= javascript_include_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" %>
-
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-
-    <%= javascript_include_tag 'scripts' %>
-    
     <%= javascript_include_tag "https://jsuites.net/v4/jsuites.js" %>
+    <%= javascript_include_tag 'scripts' %>  
     
   </head>
 
@@ -261,16 +257,6 @@
       </div>
     </footer>
     <!-- /footer -->
-
-    <script type="text/javascript">
-      (function () {
-        'use strict'
-      
-        document.querySelector('.collapsed').addEventListener('click', function () {
-          document.querySelector('.collapse').classList.toggle('open')
-        })
-      })()
-    </script>
 
   </body>
 </html>
